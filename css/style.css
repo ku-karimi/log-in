@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* form style */
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form .contayner{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(160, 173, 176, 0.362);
+    border: 5px rgba(178, 184, 184, 0.201) solid;
+    box-shadow: 4px 8px 10px rgba(128, 128, 128, 0.914);
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+}
+/* input dive style */
+.contayner div{
+    margin: 9px;
+}
+
+form #title , #Radio , #btn{
+    width: 100%;
+    display: block;
+}
+
+#title p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+        /* label style */
+
+form label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+#select label{
+    display: inline;
+}
+
+#CheckLabel{
+    display: inline;
+}
+
+        /* input style */
+
+#Fname, #Lname , #Email{
+    border: 1px solid darkcyan;
+    width: 200px;
+    height: 30px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}        
+
+#EmailDiv{
+    width: 100%;
+}
+
+#Email{
+    justify-self: center;
+    width: 97%;
+}
+
+#radioDiv{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+#select{
+    background: snow;
+    padding: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid darkcyan;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#textBarDiv{
+    width: 100%;
+}
+
+#textBar{
+    width: 96%;
+    border: 1px solid darkcyan;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#btn input{
+    width: 90%;
+    height: 40px;
+    background: darkcyan;
+    border: none;
+    font-size: 16px;
+    font-weight: 900;
+    color: snow;
+}
+
+@media screen and(min-width: 480px) {
+    *{
+        margin: 0px;
+    }
+    form .contayner{
+    margin-top: 0px;
+    padding: 0px;
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+  }

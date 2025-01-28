@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Log in</title>
 </head>
 <body>
     <form action="get">
-        <div>
-            <div>
-                <p>
-                    Contact Us
-                </p>
+        <div class="contayner">
+            <div id="title">
+                <p> Contact Us</p>
             </div>
             <div>
                 <label for="Fname">First Nama <sup>.</sup></label>
@@ -21,26 +20,32 @@
                 <label for="Lname">Last Nama <sup>.</sup></label>
                 <input type="text" name="Lname" id="Lname">
             </div>
-            <div>
+            <div id="EmailDiv">
                 <label for="Email">Email <sup>.</sup></label>
                 <input type="email" name="Email" id="Email">
             </div>
-            <div>
+            <div id="Radio">
                 <label for="Query">Query Type <sup>.</sup></label>
-                <input type="radio" name="QuerySelect" id="QuerySelect">
-                <label for="QuerySelect">Generaly Enquer</label>
-                <input type="radio" name="QuerySelect" id="QuerySelect">
-                <label for="QuerySelect">Support Request</label>
+                <div id="radioDiv">
+                    <div id="select">
+                        <input type="radio" name="QuerySelect" id="QuerySelect">
+                        <label for="QuerySelect" id="QuerySelectLabel">Generaly Enquer</label>
+                    </div>
+                    <div id="select">
+                        <input type="radio" name="QuerySelect" id="QuerySelect">
+                        <label for="QuerySelect" id="QuerySelectLabel">Support Request</label>
+                    </div>
+                </div>
             </div>
-            <div>
+            <div id="textBarDiv">
                 <label for="textBar">Message <sup>.</sup></label>
-                <textarea name="textBar" id="textBar" rows="10"></textarea>
+                <textarea name="textBar" id="textBar" rows="4"></textarea>
             </div>
             <div>
                 <input type="checkbox" name="Check" id="Check">
-                <label for="Check">I consent to being contacted by the team .</label>
+                <label for="Check" id="CheckLabel">I consent to being contacted by the team .</label>
             </div>
-            <div>
+            <div id="btn">
                 <input type="submit" value="Submit">
             </div>
         </div>
