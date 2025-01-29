@@ -60,7 +60,7 @@ function submitFunc(event) {
     let choese = false;
 
     for(let x of radioInputs){
-        if (x.checked == "true") {
+        if (x.checked) {
             choese = true ;
             break;
         }
@@ -76,7 +76,6 @@ function submitFunc(event) {
             titleDiv.append(spanTag);
         }
     }else{
-        btnSubmit.type = "submit" ;
         if (spanTagExist) {
             spanTagExist.innerHTML = " form submited =)"
             spanTagExist.style.color = " #6E8E59";
@@ -86,7 +85,9 @@ function submitFunc(event) {
             spanTag.innerHTML = "form submited =)" ;
             titleDiv.append(spanTag);
         }
+        location.reload()
     }
+
 }
 
 btnSubmit.addEventListener("click" , submitFunc)
